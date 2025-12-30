@@ -50,10 +50,10 @@ function roundRect(ctx, x, y, w, h, r, fill = false, stroke = false) {
 }
 
 module.exports.config = {
-  name: "up",
+  name: "upt",
   version: "1.0.6",
   hasPermssion: 0,
-  credits: "Rx Abdullah",
+  credits: "rX",
   usePrefix: true,
   description: "Bot status image",
   commandCategory: "system",
