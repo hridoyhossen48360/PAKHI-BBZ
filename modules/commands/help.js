@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports.config = {
   name: "help",
-  version: "4.3.0",
+  version: "4.4.0",
   hasPermssion: 0,
   credits: "rX",
   usePrefix: true,
@@ -25,6 +25,7 @@ module.exports.run = async function ({ api, event, args }) {
         if (!cmd.config) continue;
         commands.push({
           name: cmd.config.name || file.replace(".js", ""),
+          aliases: cmd.config.aliases || [],   // ✅ Alias field
           category: cmd.config.commandCategory || "Other",
           description: cmd.config.description || "No description available.",
           author: cmd.config.credits || "Unknown",
@@ -38,12 +39,13 @@ module.exports.run = async function ({ api, event, args }) {
     // ---------- Command detail ----------
     if (args[0] && isNaN(args[0])) {
       const find = args[0].toLowerCase();
-      const cmd = commands.find(c => c.name.toLowerCase() === find);
+      const cmd = commands.find(c => c.name.toLowerCase() === find || (c.aliases && c.aliases.includes(find)));
       if (!cmd)
         return api.sendMessage(`❌ Command "${find}" not found.`, event.threadID, event.messageID);
 
       let msg = `╭──❏ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗗𝗘𝗧𝗔𝗜𝗟 ❏──╮\n`;
       msg += `│ ✧ Name: ${cmd.name}\n`;
+      if (cmd.aliases.length > 0) msg += `│ ✧ Aliases: ${cmd.aliases.join(", ")}\n`;  // ✅ show aliases
       msg += `│ ✧ Category: ${cmd.category}\n`;
       msg += `│ ✧ Version: ${cmd.version}\n`;
       msg += `│ ✧ Author: ${cmd.author}\n`;
@@ -92,6 +94,7 @@ module.exports.run = async function ({ api, event, args }) {
     msg += `╰‣ 𝐀𝐝𝐦𝐢𝐧 : 𝐫𝐗 𝐀𝐛𝐝𝐮𝐥𝐥𝐚𝐡\n`;
     msg += `╰‣ 𝐑𝐢𝐩𝐨𝐫𝐭 : !callad (yourmsg)\n`;
     msg += `╰‣ 𝐓𝐲𝐩𝐞 !help2 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞\n`;
+
     // Attach random GIF for both pages
     let attachment = null;
     const cache = path.join(__dirname, "noprefix");
