@@ -47,40 +47,48 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
 
     const prefixUsed = body.startsWith(threadPrefix);
 
- if (ADMINBOT.includes(senderID) && !prefixUsed) {
-    const temp = body.trim().split(/ +/);
-    commandName = temp.shift()?.toLowerCase();
-    args = temp;
-  } else {
-
-    if (!prefixRegex.test(body)) return;
-    const [matchedPrefix] = body.match(prefixRegex);
-    const argsTemp = body.slice(matchedPrefix.length).trim().split(/ +/);
-    commandName = argsTemp.shift()?.toLowerCase();
-    args = argsTemp;
-  }
+    if (ADMINBOT.includes(senderID) && !prefixUsed) {
+      const temp = body.trim().split(/ +/);
+      commandName = temp.shift()?.toLowerCase();
+      args = temp;
+    } else {
+      if (!prefixRegex.test(body)) return;
+      const [matchedPrefix] = body.match(prefixRegex);
+      const argsTemp = body.slice(matchedPrefix.length).trim().split(/ +/);
+      commandName = argsTemp.shift()?.toLowerCase();
+      args = argsTemp;
+    }
 
     if (!commandName) {
       return api.sendMessage(global.getText("handleCommand", "onlyprefix"), threadID, messageID);
     }
+    
+    for (const [cmdName, cmdObj] of commands) {
+      if (cmdObj.config.aliases && cmdObj.config.aliases.includes(commandName)) {
+        commandName = cmdName; 
+        break;
+      }
+    }
 
+    // ===== Normal Command Fetch =====
     let command = commands.get(commandName);
 
-if (!command && prefixUsed) {
-    const allCommandName = Array.from(commands.keys());
-    const checker = stringSimilarity.findBestMatch(commandName, allCommandName);
-    if (checker.bestMatch.rating >= 0.5) {
+    // ===== Fuzzy Search if command not found =====
+    if (!command && prefixUsed) {
+      const allCommandName = Array.from(commands.keys());
+      const checker = stringSimilarity.findBestMatch(commandName, allCommandName);
+      if (checker.bestMatch.rating >= 0.5) {
         command = commands.get(checker.bestMatch.target);
-    } else {
+      } else {
         return api.sendMessage(
-            global.getText("handleCommand", "commandNotExist", checker.bestMatch.target),
-            threadID,
-            messageID
+          global.getText("handleCommand", "commandNotExist", checker.bestMatch.target),
+          threadID,
+          messageID
         );
+      }
     }
-}
 
-if (!command && !prefixUsed) return;
+    if (!command && !prefixUsed) return;
 
     if (!command) {
       const allCommandName = Array.from(commands.keys());
@@ -129,23 +137,18 @@ if (!command && !prefixUsed) return;
     // ===== Permission Check =====
     let permssion = 0;
     const threadInfoo =
-    threadInfo.get(threadID) || (await Threads.getInfo(threadID));
+      threadInfo.get(threadID) || (await Threads.getInfo(threadID));
     const find = threadInfoo.adminIDs.find(el => el.id == senderID);
 
     if (NDH.includes(senderID)) permssion = 2;
     else if (ADMINBOT.includes(senderID)) permssion = 3;
     else if (find) permssion = 1;
 
-   // ❗ permission not enough → system message call made by rX
     if (command.config.hasPermssion > permssion) {
       return api.sendMessage(
-       global.getText(
-        "handleCommand",
-        "permissionNotEnough",
-        command.config.name
-       ),
-       threadID,
-       messageID
+        global.getText("handleCommand", "permissionNotEnough", command.config.name),
+        threadID,
+        messageID
       );
     }
 
