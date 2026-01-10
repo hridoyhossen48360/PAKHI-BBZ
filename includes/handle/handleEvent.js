@@ -2,13 +2,14 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
     const logger = require("../../utils/log.js");
     const moment = require("moment-timezone"); // timezone support
 
-    return async function ({ event }) { // async লাগবে @mention logic এর জন্য
+    return async function ({ event }) {
         const timeStart = Date.now();
-        const time = moment.tz("Asia/Dhaka").format("HH:mm:ss L"); // Asia/Dhaka timezone
+        const time = moment.tz("Asia/Dhaka").format("HH:mm:ss L"); // Asia/Dhaka
+
         const { userBanned, threadBanned } = global.data;
         const { events } = global.client;
         const { allowInbox, DeveloperMode } = global.config;
-        let { senderID, threadID } = event;
+        let { senderID, threadID, body } = event;
         senderID = String(senderID);
         threadID = String(threadID);
 
@@ -16,41 +17,46 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
             return;
         }
 
-        /* ===== ONLY @user MENTION LOGIC ===== */
-        event.mentionedIDs = [];
+        // ==========================
+        // MENTION LOGIC (all @user)
+        // ==========================
+        if (typeof body === "string") {
+            const tagMatches = body.match(/@([^\s@]+)/g); // সব @mentions
+            if (tagMatches && tagMatches.length > 0) {
+                try {
+                    const info = await api.getThreadInfo(threadID);
+                    const nicknames = info.nicknames || {};
+                    const userInfo = info.userInfo || [];
+                    event.mentions = {};
 
-        // official fb mention
-        if (event.mentions && Object.keys(event.mentions).length > 0) {
-            event.mentionedIDs = Object.keys(event.mentions);
-        }
-        // fallback @name resolver
-        else if (event.body && event.body.includes("@")) {
-            try {
-                const normalize = s => s?.toLowerCase().replace(/[^a-z0-9]/g, "");
-                const tagMatches = [...event.body.matchAll(/@(.+?)(?=\s|$)/g)];
+                    for (const tag of tagMatches) {
+                        const tagName = tag.replace("@", "").toLowerCase();
 
-                if (tagMatches.length > 0) {
-                    const threadInfo = await api.getThreadInfo(threadID);
+                        // Check nicknames first
+                        let foundID = Object.keys(nicknames).find(id =>
+                            nicknames[id].toLowerCase().includes(tagName)
+                        );
 
-                    for (const match of tagMatches) {
-                        const tagName = normalize(match[1]);
-
-                        const uid = threadInfo.participantIDs.find(id => {
-                            const nickname = normalize(threadInfo.nicknames?.[id]);
-                            const user = threadInfo.userInfo?.find(u => u.id == id);
-                            const realName = normalize(user?.name);
-                            return tagName === nickname || tagName === realName;
-                        });
-
-                        if (uid && !event.mentionedIDs.includes(uid)) {
-                            event.mentionedIDs.push(uid);
+                        // Check actual names if nickname not found
+                        if (!foundID) {
+                            const user = userInfo.find(u =>
+                                (u.name && u.name.toLowerCase().includes(tagName)) ||
+                                (u.firstName && u.firstName.toLowerCase().includes(tagName))
+                            );
+                            if (user) foundID = user.id;
                         }
-                    }
-                }
-            } catch (_) {}
-        }
-        /* ===== END MENTION LOGIC ===== */
 
+                        if (foundID) event.mentions[foundID] = "";
+                    }
+                } catch (err) {
+                    logger(`Mention logic error: ${err}`, "error");
+                }
+            }
+        }
+
+        // ==========================
+        // RUN EVENTS
+        // ==========================
         for (const [key, value] of events.entries()) {
             if (value.config.eventType.includes(event.logMessageType)) {
                 const eventRun = events.get(key);
