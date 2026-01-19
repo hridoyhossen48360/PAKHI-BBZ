@@ -1,12 +1,13 @@
+
 "use strict";
 
 var utils = require("../utils");
-var log = require("npmlog");
+// @NethWs3Dev
 
 module.exports = function (defaultFuncs, api, ctx) {
 	return async function shareLink(text, url, threadID, callback) {
-		var resolveFunc = function () { };
-		var rejectFunc = function () { };
+		var resolveFunc = function () {};
+		var rejectFunc = function () {};
 		var returnPromise = new Promise(function (resolve, reject) {
 			resolveFunc = resolve;
 			rejectFunc = reject;
@@ -17,7 +18,7 @@ module.exports = function (defaultFuncs, api, ctx) {
 				resolveFunc(data);
 			};
 		}
-		mqttClient.publish('/ls_req',
+		ctx.mqttClient.publish('/ls_req',
 			JSON.stringify({
 				"app_id": "2220391788200892",
 				"payload": JSON.stringify({
@@ -29,7 +30,7 @@ module.exports = function (defaultFuncs, api, ctx) {
 									"sync_group": 1,
 									"send_type": 6,
 									"mark_thread_read": 0,
-									"url": url || "https://www.facebook.com/Lazic.Kanzu",
+									"url": url || "https://www.facebook.com/haji.atomyc2727",
 									"text": text || "",
 									"thread_id": threadID,
 									"initiating_source": 0

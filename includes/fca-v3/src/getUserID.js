@@ -49,7 +49,6 @@ module.exports = function (defaultFuncs, api, ctx) {
         if (resData.error) throw resData;
 
         var data = resData.payload.entries;
-
         callback(null, data.map(formatData));
       })
       .catch(function (err) {

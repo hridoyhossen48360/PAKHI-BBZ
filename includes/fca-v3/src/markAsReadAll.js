@@ -15,7 +15,6 @@ module.exports = function (defaultFuncs, api, ctx) {
     if (!callback) {
       callback = function (err, data) {
         if (err) return rejectFunc(err);
-
         resolveFunc(data);
       };
     }
@@ -30,14 +29,12 @@ module.exports = function (defaultFuncs, api, ctx) {
       .then(utils.parseAndCheckLogin(ctx, defaultFuncs))
       .then(function (resData) {
         if (resData.error) throw resData;
-
         return callback();
       })
       .catch(function (err) {
         log.error("markAsReadAll", err);
         return callback(err);
       });
-
     return returnPromise;
   };
 };

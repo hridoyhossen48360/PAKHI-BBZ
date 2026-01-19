@@ -23,7 +23,6 @@ module.exports = function (defaultFuncs, api, ctx) {
     if (!threadID || !messageID) return callback("Error: messageID or threadID is not defined");
 
     var form = {};
-
     form["message_ids[0]"] = messageID;
     form["thread_ids[" + threadID + "][0]"] = messageID;
 

@@ -22,7 +22,7 @@ module.exports = function (defaultFuncs, api, ctx) {
     }
 
     var form = {
-      viewer_id: userID,
+      viewer_id: ctx.userID,
       "frefs[0]": "jwl",
       floc: "friend_center_requests",
       ref: "/reqs.php",
