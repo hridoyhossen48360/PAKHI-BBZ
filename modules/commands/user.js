@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 2,
 	credits: "rX",
 	description: "Ban or unblock users by uid",
-	commandCategory: "system",
+	commandCategory: "System",
 	usages: "[unban/ban/search] [ID or text]",
 	cooldowns: 5
 };

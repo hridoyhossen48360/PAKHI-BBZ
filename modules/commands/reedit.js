@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "Directly edit bot's replied message",
-  commandCategory: "fun",
+  commandCategory: "Utility",
   usages: "reply to a bot message then type !edit <text>",
   cooldowns: 5,
 };

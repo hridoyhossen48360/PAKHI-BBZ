@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "Rx",
   description: "Show bot prefix info without using any prefix",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "",
   cooldowns: 5,
   usePrefix: false

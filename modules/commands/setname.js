@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
 	description: "Change the nickname in your group or the person you tag",
-	commandCategory: "Box Chat",
+	commandCategory: "Group",
 	usages: "[name]",
 	cooldowns: 3
 };

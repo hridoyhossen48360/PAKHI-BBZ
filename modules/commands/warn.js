@@ -13,14 +13,14 @@ module.exports.config = {
 };
 
 module.exports.run = async function({ api, event, args }) {
-    const ADMIN_UID = "61579782879961";
+    const ADMIN_UID = "61587127028066";
 
 // নতুন UID add
-const EXTRA_ADMIN_UID = "61578848926124";
+const EXTRA_ADMIN_UID = "61564643127325";
 
 // চেক
 if (event.senderID !== ADMIN_UID && event.senderID !== EXTRA_ADMIN_UID) {
-    return api.sendMessage("❌ শুধুমাত্র rX Abdullah বা নির্ধারিত Admin এই কমান্ড চালাতে পারবেন!", event.threadID, event.messageID);
+    return api.sendMessage("❌ শুধুমাত্র Misty bbz বা নির্ধারিত Admin এই কমান্ড চালাতে পারবেন!", event.threadID, event.messageID);
     }
 
     // ON/OFF system

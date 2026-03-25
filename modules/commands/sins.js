@@ -4,7 +4,7 @@ module.exports.config = {
  hasPermssion: 0,
  credits: "rX",
  description: "",
- commandCategory: "edit-img",
+ commandCategory: "Image",
  usages: " [text]",
  cooldowns: 10,
  dependencies: {

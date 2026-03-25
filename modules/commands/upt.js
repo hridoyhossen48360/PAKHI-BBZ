@@ -9,7 +9,7 @@ module.exports.config = {
   credits: "rX",
   usePrefix: true,
   description: "Neon Bot Status Image",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "",
   cooldowns: 5,
 };
@@ -93,7 +93,7 @@ module.exports.run = async function ({ api, event }) {
     // 🪪 Footer
     ctx.font = "20px Sans";
     ctx.fillStyle = "#aefcff";
-    ctx.fillText("Thanks for using Maria v3", canvas.width - 280, canvas.height - 40);
+    ctx.fillText("Thanks for using pakhi bbz", canvas.width - 280, canvas.height - 40);
 
     // 💾 Save
     const outPath = path.join(__dirname, "cache", `upt_${event.senderID}.png`);

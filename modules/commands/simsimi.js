@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "Exact Answer → Actual Question finder",
-  commandCategory: "Fun",
+  commandCategory: "Utility",
   cooldowns: 3,
   dependencies: []
 };

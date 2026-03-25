@@ -16,7 +16,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "Scan QR code from a replied image",
-  commandCategory: "user",
+  commandCategory: "AI",
   usages: "!scan (reply to an image containing QR code)",
   cooldowns: 5,
   dependencies: {}

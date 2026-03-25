@@ -14,8 +14,8 @@ module.exports = {
     countDown: 5,
     hasPermssion: 0,
     description: "Download video, audio, and info from YouTube",
-    category: "media",
-    commandCategory: "media",
+    category: "Media",
+    commandCategory: "Media",
     usePrefix: true,
     prefix: true,
     usages:

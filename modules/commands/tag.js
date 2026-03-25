@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "RxHelper",
   description: "Tag someone N times (each in separate messages, optional text)",
-  commandCategory: "utility",
+  commandCategory: "Utility",
   usages: "!tag <Nx> @mention [optional text] | or reply a message then use: !tag <Nx> [optional text]",
   cooldowns: 2
 };

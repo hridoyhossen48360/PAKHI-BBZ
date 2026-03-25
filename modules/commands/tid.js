@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
 	description: "Get box id", 
-	commandCategory: "group",
+	commandCategory: "Group",
 	usages: "tid",
 	cooldowns: 5, 
 	dependencies: '',

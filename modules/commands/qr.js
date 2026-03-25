@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Generate styled QR code from text (clean red/pink theme)",
-  commandCategory: "user",
+  commandCategory: "AI",
   usages: "[text]",
   cooldowns: 5,
   dependencies: {

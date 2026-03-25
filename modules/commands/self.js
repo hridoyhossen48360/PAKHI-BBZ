@@ -7,7 +7,7 @@ module.exports.config = {
 	hasPermssion: 2,
 	credits: "𝐫𝐗",
 	description: "Manage bot admin (supports reply + timed add + God ID)",
-	commandCategory: "config",
+	commandCategory: "System",
 	usages: "[list/add/remove] [@mention/userID/reply] [time (optional: 1m,1h,1d)]",
 	cooldowns: 5,
 	dependencies: { "fs-extra": "" }

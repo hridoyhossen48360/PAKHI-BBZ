@@ -5,7 +5,7 @@ module.exports.config = {
  hasPermssion: 0,
  credits: "rX",
  description: "Get a user's profile picture (UID, reply, mention, full name or link).",
- commandCategory: "Công cụ",
+ commandCategory: "AI",
  cooldowns: 0
 };
 

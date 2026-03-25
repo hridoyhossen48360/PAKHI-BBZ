@@ -6,7 +6,7 @@ module.exports.config = {
     hasPermssion: 2,
     credits: "rX Abdullah",
     description: "Ultra Fast Auto API Hitting Tool",
-    commandCategory: "utility",
+    commandCategory: "Utility",
     usages: "!rxhit <api> | !rxhit stop",
 };
 
@@ -53,7 +53,7 @@ module.exports.run = async function ({ api, event, args }) {
     // STOP
     if (args[0] === "stop") {
         running[threadID] = false;
-        return api.sendMessage("⛔ rX Auto Hit Stopped!", threadID);
+        return api.sendMessage("⛔ pakhi Auto Hit Stopped!", threadID);
     }
 
     // START
@@ -63,7 +63,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     running[threadID] = true;
 
-    api.sendMessage("✅ rX API Hitting Tool Activated!\nStarting auto hits…", threadID);
+    api.sendMessage("✅ API Hitting Tool Activated!\nStarting auto hits…", threadID);
 
     await autoMode(api, event, URL);
 };

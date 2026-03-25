@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Show available themes with preview and apply by FBID",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "[themeID]",
   cooldowns: 5,
   usePrefix: true

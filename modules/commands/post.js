@@ -4,7 +4,7 @@ module.exports.config = {
   permission: 0,
   credits: "rX Abdullah",
   description: "Create a Facebook post using createPost",
-  commandCategory: "facebook",
+  commandCategory: "System",
   usages: "!post <text>",
   cooldowns: 2
 };

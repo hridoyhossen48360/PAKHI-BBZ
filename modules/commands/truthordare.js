@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Play truth or dare using questions from Render API and SimSimi for replies (no countdown)",
-  commandCategory: "fun",
+  commandCategory: "Game",
   usages: "[optional: truth/dare]",
   cooldowns: 5,
 };

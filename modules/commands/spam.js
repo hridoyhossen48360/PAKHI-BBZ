@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "rX",
   description: "Start/stop spam messages in a thread. Usage: !spam <number> <custom message> | !spam off",
-  commandCategory: "utility",
+  commandCategory: "Utility",
   usages: "!spam <number> <custom message> | !spam off",
   cooldowns: 5
 };

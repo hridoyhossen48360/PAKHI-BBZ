@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 2,
     credits: "rX",
     description: "",
-    commandCategory: "admin",
+    commandCategory: "Admin",
     usages: "",
     cooldowns: 10,
     

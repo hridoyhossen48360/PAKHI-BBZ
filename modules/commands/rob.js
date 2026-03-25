@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "Mirai Team (Translated by rX Abdullah)",
     description: "Try to rob another user randomly",
-    commandCategory: "game",
+    commandCategory: "Game",
     usages: "",
     cooldowns: 5
 };

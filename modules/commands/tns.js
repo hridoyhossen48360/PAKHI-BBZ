@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "rX",
   usePrefix: false,
   description: "Translate text to specified language",
-  commandCategory: "media",
+  commandCategory: "AI",
   usages: "[language] (text)",
   cooldowns: 5,
   dependencies: {

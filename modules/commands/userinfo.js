@@ -3,7 +3,7 @@ module.exports.config = {
   version: "2.1.0",
   credits: "rX",
   description: "User ID Card with Gender & Birthday Fix",
-  commandCategory: "info",
+  commandCategory: "AI",
   usages: "[reply / mention / uid]",
   cooldowns: 5
 };
@@ -94,7 +94,7 @@ module.exports.run = async function ({ api, event, args }) {
     ctx.stroke();
 
     ctx.font = "18px Sans";
-    ctx.fillText("Powered by Maria v3", 520, 400);
+    ctx.fillText("Powered by Misty bbz", 520, 400);
 
     // save
     const imgPath = path.join(__dirname, "cache", `userid_${uid}.png`);

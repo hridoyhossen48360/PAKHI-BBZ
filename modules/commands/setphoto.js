@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 2, // শুধুমাত্র admin বা owner চালাতে পারবে (0 দিলে সবাই পারবে)
   credits: "rX Abdullah",
   description: "Bot-এর প্রোফাইল ছবি পরিবর্তন করুন একটি ছবির রিপ্লাই বা অ্যাটাচমেন্ট দিয়ে",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "Reply a photo with !set photo",
   cooldowns: 5,
 };

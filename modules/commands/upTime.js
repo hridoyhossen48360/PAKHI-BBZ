@@ -10,7 +10,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "Show v3 uptime info",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "uptime",
   cooldowns: 5
 };
@@ -98,7 +98,7 @@ module.exports.run = async function ({ api, event }) {
     ctx.shadowColor = "#00f2ff";
     ctx.fillStyle = "#ffffff";
     ctx.font = "bold 20px Arial";
-    ctx.fillText("MARIA V3 UPTIME INFO", 240, 40);
+    ctx.fillText("PAKHI BBZ UPTIME INFO", 240, 40);
     ctx.shadowBlur = 0;
 
     // 1. CPU
@@ -193,7 +193,7 @@ module.exports.run = async function ({ api, event }) {
 
     // -------- OVER TEXT SYSTEM --------
     const textInfo =
-`📊 𝗠𝗔𝗥𝗜𝗔 𝗩𝟯 𝗨𝗣𝗧𝗜𝗠𝗘
+`📊 𝗣𝗔𝗞𝗛𝗜 𝗕𝗕𝗭 𝗨𝗣𝗧𝗜𝗠𝗘
 ━━━━━━━━━━━━━━
 ⚙ CPU: ${cpu}%
 🧠 RAM: ${(usedRAM / 1024 ** 3).toFixed(1)}G / ${(totalRAM / 1024 ** 3).toFixed(1)}G

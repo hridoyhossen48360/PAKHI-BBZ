@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Show/add/remove rules per group (dynamic API from GitHub JSON)",
-  commandCategory: "noprefix",
+  commandCategory: "Group",
   usages: "rules / !rules add/remove/all",
   cooldowns: 5,
 };

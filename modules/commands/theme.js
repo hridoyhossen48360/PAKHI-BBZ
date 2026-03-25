@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "rX Abdullah",
   description: "Search AI/custom themes with preview and apply by reply (minimal message)",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "!theme <prompt>",
   cooldowns: 5
 };

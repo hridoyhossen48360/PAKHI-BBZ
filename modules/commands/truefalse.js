@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Random True/False or Sotti/Mitta reply",
-  commandCategory: "fun",
+  commandCategory: "Game",
   usages: "true or false / sotti mitta",
   cooldowns: 2,
   prefix: false

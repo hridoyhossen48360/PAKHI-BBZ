@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
 	description: "react 😡 to unsent",
-	commandCategory: "system",
+	commandCategory: "System",
 	usages: "unsend",
 	cooldowns: 0
 };

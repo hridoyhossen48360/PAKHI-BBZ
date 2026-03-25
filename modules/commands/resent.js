@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 1,
     credits: "rX",
     description: "Là resend thôi Fix Ver > 1.2.13",
-    commandCategory: "general",
+    commandCategory: "System",
     usages: "",
     cooldowns: 0,
     hide: true,

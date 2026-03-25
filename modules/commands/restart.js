@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 2,
 	credits: "𝐫𝐗",
 	description: "Restart Bot",
-	commandCategory: "system",
+	commandCategory: "System",
 	usages: "",
 	cooldowns: 5
 };

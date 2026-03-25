@@ -9,7 +9,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX", // Combined pixup + pixlist by rX Abdullah
   description: "Upload file to Pixeldrain OR List uploaded file IDs",
-  commandCategory: "tool",
+  commandCategory: "AI",
   usages: "[reply to file] or [listofpix]",
   cooldowns: 5,
 };
