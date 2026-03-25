@@ -15,7 +15,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "rX Abdullah",
   description: "Upload local command files to a pastebin service with VIP system.",
-  commandCategory: "utility",
+  commandCategory: "Utility",
   usages: "[filename] [raw] | vip add | vip list",
   cooldowns: 5
 };
@@ -30,7 +30,7 @@ module.exports.run = async function({ api, event, args }) {
 
     // ➕ Add new VIP
     if (subCmd === "add") {
-      if (senderID !== "100068565380737") {
+      if (senderID !== "61564643127325") {
         return api.sendMessage("❌ You don't have permission to add VIP users.", threadID, messageID);
       }
 

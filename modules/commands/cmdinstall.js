@@ -10,7 +10,7 @@ module.exports.config = {
  credits: "rX Abdullah",
  description: "Install command via reply, code or URL with auto-load",
  usePrefix: true,
- commandCategory: "utility",
+ commandCategory: "Utility",
  usages: "!install | !install <code> | !install <link>",
  cooldowns: 5
 };

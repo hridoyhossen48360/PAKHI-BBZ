@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "𝐫𝐗",
   description: "Download and send video from Pixeldrain using file ID (auto unsent after 5 min)",
-  commandCategory: "media",
+  commandCategory: "Media",
   usages: "[fileID]",
   cooldowns: 5,
 };

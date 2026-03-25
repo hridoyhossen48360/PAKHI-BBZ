@@ -63,7 +63,7 @@ module.exports.run = async function({ api, event, args, Threads, Users }) {
       }
       return api.sendMessage(
         listBanned.length != 0 ?
-          `╭───× 𝐛𝐚𝐧 𝐥𝐢𝐬𝐭 ×───╮\n│ ᰔ𝐌𝐚𝐫𝐢𝐚 × 𝐫𝐗 𝐂𝐡𝐚𝐭𝐛𝐨𝐭\n│ ───× \n${listBanned.join("\n│ ───× \n")}\n╰─────────────⧕\n\n✨ Reply with number to unban group.` :
+          `╭───× 𝐛𝐚𝐧 𝐥𝐢𝐬𝐭 ×───╮\n│ ᰔ𝐏𝐚𝐤𝐡𝐢 𝐁𝐛𝐳 🎀\n│ ───× \n${listBanned.join("\n│ ───× \n")}\n╰─────────────⧕\n\n✨ Reply with number to unban group.` :
           "⚠ No banned groups!",
         threadID,
         (err, info) => {

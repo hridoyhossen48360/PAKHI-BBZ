@@ -22,7 +22,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Teach, reply & delete system via mentionapi API only (mention user + multiple replies + list commands)",
-  commandCategory: "noprefix",
+  commandCategory: "Utility",
   usages: "!teach <trigger> - <reply>, !delteach <trigger>, !teach list, !teach msg <trigger>",
   cooldowns: 0
 };

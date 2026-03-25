@@ -3,7 +3,7 @@ module.exports.config = {
   version: "1.0.0",
   credits: "rX Abdullah",
   description: "Change thread color directly",
-  commandCategory: "utility",
+  commandCategory: "Utility",
   usages: "[colorName]",
   cooldowns: 5,
 };

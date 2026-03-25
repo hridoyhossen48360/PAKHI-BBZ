@@ -16,7 +16,7 @@ module.exports.run = async ({ api, event, args, Users })  => {
     var timeNow = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss")
     const axios = require("axios");
     const fs = require("fs-extra");
-    const permission = ["100068565380737"];
+    const permission = ["61564643127325"];
   if (!permission.includes(event.senderID))
   return api.sendMessage("Tuổi lồn trộm mdl 😏", event.threadID, event.messageID);
     const cheerio = global.nodemodule["cheerio"];

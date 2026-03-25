@@ -6,7 +6,7 @@ version: "version", // phiên bản của module này
 hasPermssion: 1, // Quyền hạn sử dụng, với 0 là toàn bộ thành viên, 1 là quản trị viên trở lên, 2 là admin/owner
 credits: "TruongMini", // Công nhận module sở hữu là ai
 description: "lọc cá cảnh trong box", // Thông tin chi tiết về lệnh
-commandCategory: "tiện ích", // Thuộc vào nhóm nào: system, other, game-sp, game-mp, random-img, edit-img, media, economy, ...
+commandCategory: "Group", // Thuộc vào nhóm nào: system, other, game-sp, game-mp, random-img, edit-img, media, economy, ...
 usages: "locmem 0", // Cách sử dụng lệnh
 cooldowns: 5, // Thời gian một người có thể lặp lại lệnh
 };

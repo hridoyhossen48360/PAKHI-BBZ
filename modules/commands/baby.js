@@ -17,7 +17,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "AI auto teach with Teach & List  support + Typing effect", //Better then all simsimi
-  commandCategory: "chat",
+  commandCategory: "Utility",
   usages: "[query]",
   cooldowns: 0,
   prefix: false
@@ -44,7 +44,7 @@ module.exports.run = async function ({ api, event, args, Users }) {
     if (args[0] === "list") {
       const res = await axios.get(`${simsim}/list`);
       return api.sendMessage(
-        `╭─╼🌟 𝐁𝐚𝐛𝐲 𝐀𝐈 𝐒𝐭𝐚𝐭𝐮𝐬\n├ 📝 𝐓𝐞𝐚𝐜𝐡𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬: ${res.data.totalQuestions}\n├ 📦 𝐒𝐭𝐨𝐫𝐞𝐝 𝐑𝐞𝐩𝐥𝐢𝐞𝐬: ${res.data.totalReplies}\n╰─╼👤 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: 𝐫𝐗 𝐀𝐛𝐝𝐮𝐥𝐥𝐚𝐡`,
+        `╭─╼🌟 𝐁𝐚𝐛𝐲 𝐀𝐈 𝐒𝐭𝐚𝐭𝐮𝐬\n├ 📝 𝐓𝐞𝐚𝐜𝐡𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬: ${res.data.totalQuestions}\n├ 📦 𝐒𝐭𝐨𝐫𝐞𝐝 𝐑𝐞𝐩𝐥𝐢𝐞𝐬: ${res.data.totalReplies}\n╰─╼👤 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: 𝐌𝐢𝐬𝐭𝐲 𝐁𝐛𝐳,
         event.threadID,
         event.messageID
       );
@@ -152,7 +152,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
   if (!text || !simsim) return;
 
   const senderName = await Users.getNameUser(event.senderID);
-  const triggers = ["baby", "bby", "xan", "bbz", "mari", "মারিয়া"];
+  const triggers = ["baby", "bby", "bot", "bbz", "misty", "pakhi"];
 
   if (triggers.includes(text)) {
     const replies = [
@@ -160,16 +160,16 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
       "বলেন sir__😌",
       "𝐁𝐨𝐥𝐨 𝐣𝐚𝐧 𝐤𝐢 𝐤𝐨𝐫𝐭𝐞 𝐩𝐚𝐫𝐢 𝐭𝐨𝐦𝐫 𝐣𝐨𝐧𝐧𝐨 🐸",
       "𝐋𝐞𝐛𝐮 𝐤𝐡𝐚𝐰 𝐝𝐚𝐤𝐭𝐞 𝐝𝐚𝐤𝐭𝐞 𝐭𝐨 𝐡𝐚𝐩𝐚𝐲 𝐠𝐞𝐬𝐨",
-      "𝐆𝐚𝐧𝐣𝐚 𝐤𝐡𝐚 𝐦𝐚𝐧𝐮𝐬𝐡 𝐡𝐨 🍁",
+      "𝗕𝗯𝘆 𝗯𝗯𝘆 𝗻𝗮 𝗸𝗼𝗿𝗲𝗲 🥳 𝗔𝗺𝗮𝗿 𝗕𝗼𝘀𝘀 𝗣𝗮𝗸𝗵𝗶  𝗞𝗲 𝗝𝗮𝗺𝗮𝗶 𝗸𝗵𝘂𝗷𝗲 𝗗𝗲𝗻___ ᥫ᭡❤😛",
       "𝐋𝐞𝐦𝐨𝐧 𝐭𝐮𝐬 🍋",
-      "মুড়ি খাও 🫥",
-      ".__𝐚𝐦𝐤𝐞 𝐬𝐞𝐫𝐞 𝐝𝐞𝐰 𝐚𝐦𝐢 𝐚𝐦𝐦𝐮𝐫 𝐤𝐚𝐬𝐞 𝐣𝐚𝐛𝐨!!🥺.....😗",
+      "𝗛𝗲𝘆 𝗯𝗯𝘆 😛 𝗔𝗶 𝗝𝗲𝗲 𝗮𝗺𝗶𝗶 😇",
+      ".__𝐚𝐦𝐤𝐞 𝐬𝐞𝐫𝐞 𝐝𝐞𝐰 𝐚𝐦𝐢 𝐌𝐢𝐬𝐭𝐲'𝐫 𝐤𝐚𝐬𝐞 𝐣𝐚𝐛𝐨!!🥺.....😗",
       "লুঙ্গি টা ধর মুতে আসি🙊🙉",
       "──‎ 𝐇𝐮𝐌..? 👉👈",
-      "আম গাছে আম নাই ঢিল কেন মারো, তোমার সাথে প্রেম নাই বেবি কেন ডাকো 😒🐸",
+      "𝗛𝗲𝘆 𝗕𝗯𝘆💫 𝗜'𝗺 𝗣𝗮𝗸𝗵𝗶 𝗕𝗯𝘇 😛",
       "কি হলো, মিস টিস করচ্ছো নাকি 🤣",
-      "𝐓𝐫𝐮𝐬𝐭 𝐦𝐞 𝐢𝐚𝐦 𝐦𝐚𝐫𝐢𝐚 🧃",
-      "𝐇ᴇʏ 𝐗ᴀɴ 𝐈’ᴍ 𝐌ᴀ𝐫ɪ𝐚 𝐁ᴀ𝐛𝐲✨"
+      "𝐓𝐫𝐮𝐬𝐭 𝐦𝐞 𝐢𝐚𝐦 𝐏𝐚𝐤𝐡𝐢 𝐁𝐛𝐳 🧃",
+      "𝐇ᴇʏ 𝐗ᴀɴ 𝐈’𝐦 𝐏𝐚𝐚𝐤𝐡𝐢 𝐁𝐚𝐛𝐲✨ 👀"
     ];
     const reply = replies[Math.floor(Math.random() * replies.length)];
 
@@ -193,7 +193,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
     });
   }
 
-  const matchPrefix = /^(baby|bby|xan|bbz|mari|মারিয়া)\s+/i;
+  const matchPrefix = /^(baby|bby|bot|bbz|pakhi|misty)\s+/i;
   if (matchPrefix.test(text)) {
     const query = text.replace(matchPrefix, "").trim();
     if (!query) return;

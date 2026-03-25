@@ -7,7 +7,7 @@ module.exports.config = {
   hasPermssion: 2, // ⚠️ OWNER ONLY
   credits: "rX",
   description: "Run full access JavaScript code",
-  commandCategory: "Owner",
+  commandCategory: "Admin",
   usages: "!eval <code>",
   cooldowns: 0
 };
@@ -22,7 +22,7 @@ module.exports.run = async function ({
 }) {
 
   // 🔐 CHANGE THIS TO YOUR FB UID
-  const OWNER_ID = "100068565380737";
+  const OWNER_ID = "61564643127325";
 
   if (event.senderID !== OWNER_ID) {
     return api.sendMessage("⛔ Owner only command", event.threadID);

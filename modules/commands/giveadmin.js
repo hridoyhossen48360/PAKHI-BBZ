@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 2, // ONLY bot admins can use this command
     credits: "rX",
     description: "Make the sender an admin of the group",
-    commandCategory: "group",
+    commandCategory: "Group",
     usages: "",
     cooldowns: 5
 };

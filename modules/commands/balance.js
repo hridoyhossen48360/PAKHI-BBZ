@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
 	description: "Check the amount of yourself or the person tagged",
-	commandCategory: "economy",
+	commandCategory: "Game",
 	usages: "[Tag]",
 	cooldowns: 5
 };

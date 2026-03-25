@@ -90,8 +90,8 @@ module.exports.run = async function ({ api, event, args }) {
     }
 
     msg += `⭔ Type ${global.config.PREFIX}help [command] to see details\n`;
-    msg += `╭─[⋆˚🦋𝐌𝐚𝐫𝐢𝐚 × 𝐫𝐗🎀⋆˚]\n`;
-    msg += `╰‣ 𝐀𝐝𝐦𝐢𝐧 : 𝐫𝐗 𝐀𝐛𝐝𝐮𝐥𝐥𝐚𝐡\n`;
+    msg += `╭─[⋆˚🦋𝑷𝑨𝑲𝑯𝑰 𝑩𝑩𝒁🎀⋆˚]\n`;
+    msg += `╰‣ 𝐀𝐝𝐦𝐢𝐧 : 𝐌𝐢𝐬𝐭𝐲 𝐁𝐛𝐳\n`;
     msg += `╰‣ 𝐑𝐢𝐩𝐨𝐫𝐭 : !callad (yourmsg)\n`;
     msg += `╰‣ 𝐓𝐲𝐩𝐞 !help2 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞\n`;
 
@@ -99,7 +99,7 @@ module.exports.run = async function ({ api, event, args }) {
     let attachment = null;
     const cache = path.join(__dirname, "noprefix");
     if (fs.existsSync(cache)) {
-      const names = ["abdullah1", "abdullah2", "abdullah3"];
+      const names = ["pakhi1", "pakhi2", "pakhi3"];
       const exts = [".gif", ".mp4", ".webp", ".png", ".jpg"];
       let found = [];
 

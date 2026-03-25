@@ -4,7 +4,7 @@ module.exports.config = {
  hasPermssion: 0,
  credits: "rX",
  description: "Image search",
- commandCategory: "Search",
+ commandCategory: "AI",
  usages: "[Text]",
  cooldowns: 0,
 };

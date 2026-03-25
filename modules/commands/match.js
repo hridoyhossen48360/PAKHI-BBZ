@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Match yourself with a tagged or replied user",
-  commandCategory: "Picture",
+  commandCategory: "Tag Fun",
   cooldowns: 5,
   dependencies: {
     "axios": "",

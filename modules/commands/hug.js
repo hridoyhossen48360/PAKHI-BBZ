@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "Lê Định Mod",
   description: "Hug the person you want",
-  commandCategory: "game",
+  commandCategory: "Tag Fun",
   usages: "@tag",
   cooldowns: 5,
   dependencies: { "request": "", "fs": "", "axios": "" }

@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "tdunguwu",
     description: "Collection of Gambling Games",
-    commandCategory: "Games",
+    commandCategory: "Game",
     usages: "",
     cooldowns: 0
 };

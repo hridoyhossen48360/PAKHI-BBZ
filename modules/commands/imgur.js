@@ -4,7 +4,7 @@ module.exports.config = {
  hasPermssion: 0,
  credits: "rX",
  description: "create your imgur link",
- commandCategory: "other", 
+ commandCategory: "AI", 
  usages: "[tag]", 
  cooldowns: 0,
 };

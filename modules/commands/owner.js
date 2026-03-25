@@ -9,7 +9,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "rX Abdullah", //don't change my credit 
     description: "Show Owner Info",
-    commandCategory: "info",
+    commandCategory: "Admin",
     usages: "",
     cooldowns: 5
 };
@@ -20,21 +20,21 @@ module.exports.run = async function({ api, event }) {
     var callback = () => api.sendMessage({
         body: `
 ┏━━━━━━━━━━━━━━━━━━━━━┓
-┃      🌟 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 🌟      
+┃      🌸 𝗣𝗔𝗞𝗛𝗜 𝗜𝗡𝗙𝗢 🌸      
 ┣━━━━━━━━━━━━━━━━━━━━━┫
-┃ 👤 𝐍𝐚𝐦𝐞  : 𝐫𝐗 𝐀𝐛𝐝𝐮𝐥𝐥𝐚𝐡
-┃ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫  : 𝐌𝐚𝐥𝐞
-┃ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧  : ??
-┃ 🎂 𝐀𝐠𝐞      : 17+
+┃ 👤 𝐍𝐚𝐦𝐞  : 𝐏𝐚𝐤𝐡𝐢
+┃ 🚺 𝐆𝐞𝐧𝐝𝐞𝐫  : 𝐅𝐞𝐦𝐚𝐥𝐞
+┃ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧  : 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 💖
+┃ 🎂 𝐀𝐠𝐞      : 16+
 ┃ 🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧  : 𝐈𝐬𝐥𝐚𝐦
-┃ 🏫 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : 𝐢𝐧𝐭𝐞𝐫 𝟐𝐧𝐝 𝐲𝐞𝐚𝐫
-┃ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬  : 𝐑𝐚𝐣𝐬𝐡𝐚𝐡𝐢, 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡
+┃ 🏫 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : 𝐒𝐜𝐡𝐨𝐨𝐥 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
+┃ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬  : 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡
 ┣━━━━━━━━━━━━━━━━━━━━━┫
-┃ 🎭 𝐓𝐢𝐤𝐭𝐨𝐤  : rx_abdullah007
-┃ 📢 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : rxabdullah007
-┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : m.me/rxabdullah007
+┃ 🎭 𝐓𝐢𝐤𝐭𝐨𝐤  : 𝐧𝐨𝐭 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞
+┃ 📢 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : 𝐩𝐫𝐢𝐯𝐚𝐭𝐞
+┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐩𝐫𝐢𝐯𝐚𝐭𝐞
 ┣━━━━━━━━━━━━━━━━━━━━━┫
-┃ 🕒 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐢𝐦𝐞:  ${time}
+┃ 🕒 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐢𝐦𝐞: ${time}
 ┗━━━━━━━━━━━━━━━━━━━━━┛
         `,
         attachment: fs.createReadStream(__dirname + "/cache/1.png")

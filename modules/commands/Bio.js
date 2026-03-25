@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 2,
 	credits: "rX",
 	description: "Change bot's bio",
-	commandCategory: "admin",
+	commandCategory: "Admin",
 	usages: "bio [text]",
   cooldowns: 5
   

@@ -4,7 +4,7 @@ module.exports.config = {
  hasPermssion: 0,
  credits: "rX",
  description: "Pair two users with a fun compatibility score",
- commandCategory: "Picture",
+ commandCategory: "Tag Fun",
  cooldowns: 5,
  dependencies: {
  "axios": "",

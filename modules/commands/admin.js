@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
 	description: "Enable or disable admin-only command mode",
-	commandCategory: "User",
+	commandCategory: "Admin",
 	usages: "Toggle admin / moderator only mode",
 	cooldowns: 0,
 	usePrefix: false,

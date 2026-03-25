@@ -10,7 +10,7 @@ module.exports.config = {
     hasPermission: 0,
     description: "Auto detect any link and ask for download confirm",
     usePrefix: false,
-    commandCategory: "utility",
+    commandCategory: "Utility",
     usages: "",
     cooldowns: 2
 };

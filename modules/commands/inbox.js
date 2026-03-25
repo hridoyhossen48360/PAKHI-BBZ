@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermission: 0,
   credits: "Shaon",
   description: "Send a random sad video",
-  commandCategory: "media",
+  commandCategory: "Media",
   usages: "",
   cooldowns: 5
 };

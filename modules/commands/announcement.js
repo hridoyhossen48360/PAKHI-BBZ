@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "rX Abdullah",
   description: "Send announcement with optional image/GIF/video/text (reply message optional) to all groups",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "[your message] (reply to media/text optional)",
   cooldowns: 5,
 };
@@ -51,7 +51,7 @@ module.exports.run = async ({ api, event, args }) => {
     return api.sendMessage("📢 Use like this:\n!message [your message]\n(or reply to media/text)", event.threadID, event.messageID);
   }
 
-  const title = "📣 ANNOUNCEMENT";
+  const title = "📣 𝚗𝚘𝚝𝚒𝚌𝚎 𝚏𝚛𝚘𝚖 𝙼𝚒𝚜𝚝𝚢";
   let msg = "";
 
   if (input) {

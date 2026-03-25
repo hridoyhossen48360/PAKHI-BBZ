@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermssion: 1,   // শুধু admin/owner use করতে পারবে
   credits: "rX Abdullah",
   description: "Delete a trigger (ask) from server",
-  commandCategory: "admin",
+  commandCategory: "Admin",
   usages: "!delete <trigger>",
   cooldowns: 5
 };

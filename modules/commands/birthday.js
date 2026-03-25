@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "ChatGPT for rX Abdullah",
   description: "Shows birthday countdown or wishes",
   usePrefix: true,
-  commandCategory: "info",
+  commandCategory: "Admin",
   cooldowns: 5
 };
 
@@ -29,8 +29,8 @@ module.exports.run = async ({ api, event }) => {
   const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
   const days = Math.floor(t / (1000 * 60 * 60 * 24));
 
-  const imageURL = "https://i.postimg.cc/QMS23xxv/IMG-0839.jpg";
-  const link = "\n\n🔗 m.me/rxabdullah007";
+  const imageURL = "https://imgur.com/a/AknlhMY";
+  const link = "\n\n🔗 m.me/61564643127325";
 
   const send = (msg) => {
     const callback = () => api.sendMessage({
@@ -44,8 +44,8 @@ module.exports.run = async ({ api, event }) => {
   };
 
   if (days === 0 && hours === 0 && minutes === 0 && seconds <= 59) {
-    return send(`🎉 আজ rX Abdullah এর জন্মদিন!\nসবাই উইশ করো 🥳💙\n📅 26 সেপ্টেম্বর, 2007 🎂${link}`);
+    return send(`🎉 আজ Misty bbz এর জন্মদিন!\nসবাই উইশ করো 🥳💙\n📅 26 সেপ্টেম্বর, 2007 🎂${link}`);
   }
 
-  return send(`📅 rX Abdullah এর জন্মদিন আসতে বাকি:\n\n⏳ ${days} দিন\n🕒 ${hours} ঘণ্টা\n🕑 ${minutes} মিনিট\n⏱️ ${seconds} সেকেন্ড${link}`);
+  return send(`📅 Misty Bbz এর জন্মদিন আসতে বাকি:\n\n⏳ ${days} দিন\n🕒 ${hours} ঘণ্টা\n🕑 ${minutes} মিনিট\n⏱️ ${seconds} সেকেন্ড${link}`);
 };

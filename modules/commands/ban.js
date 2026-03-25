@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
 	description: "Permanently ban members from the group",
-	commandCategory: "group",
+	commandCategory: "Group",
 	usages: "[key]",
 	cooldowns: 5,
 	info: [

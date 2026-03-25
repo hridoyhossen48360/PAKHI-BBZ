@@ -14,7 +14,7 @@ module.exports.config = {
   hasPermission: 2,
   description: "Choose a group from bot's list to join",
   usePrefix: true,
-  commandCategory: "General",
+  commandCategory: "Admin",
   usage: "!allgc",
 };
 

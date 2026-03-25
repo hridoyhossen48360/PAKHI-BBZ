@@ -14,7 +14,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "Neoaz ゐ / modify by rX",
     description: "Generate animated video using AI prompt",
-    commandCategory: "AI Tools",
+    commandCategory: "AI",
     usages: "animate <prompt>",
     cooldowns: 5,
 };

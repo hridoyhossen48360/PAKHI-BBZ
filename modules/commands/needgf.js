@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Send random gf link with preview",
-  commandCategory: "fun",
+  commandCategory: "Tag Fun",
   usages: "",
   cooldowns: 0,
   triggerWords: ["need gf", "need a gf", "needgirlfriend"]

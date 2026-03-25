@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "rX",
     description: "Parent group settingst.",
-	commandCategory: "box",
+	commandCategory: "Group",
 	usages: "[name/emoji/admin/image/info]",
 	cooldowns: 1,
 	dependencies: {

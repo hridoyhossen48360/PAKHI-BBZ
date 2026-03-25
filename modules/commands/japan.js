@@ -7,7 +7,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "japani girls pp",
-  commandCategory: "Random-IMG",
+  commandCategory: "nsfw",
   usages: "",
   cooldowns: 5,
     dependencies: {"request": "",

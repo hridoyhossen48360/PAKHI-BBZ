@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 1,
   credits: "rX",
   description: "Anti change Group info system",
-  commandCategory: "Administrator",
+  commandCategory: "Group",
   usages: "anti [reply number]",
   cooldowns: 5,
   images: [],
@@ -161,7 +161,7 @@ module.exports.handleReply = async function ({ api, event, args, handleReply, Th
         const antiBoxname = dataAnti.boxname.find(item => item.threadID === threadID);
         const antiNickname = dataAnti.antiNickname.find(item => item.threadID === threadID);
         const status = (bool) => bool ? "ON" : "OFF";
-        return api.sendMessage(`[ ANTI SYSTEM STATUS ]\n────────────────────\n|› 1. Anti Namebox: ${status(antiBoxname)}\n|› 2. Anti Imagebox: ${status(antiImage)}\n|› 3. Anti Nickname: ${status(antiNickname)}\n|› 4. Anti Out: ${status(dataAnti.antiout[threadID])}\n────────────────────\n|› Maria Anti System - Protect your group!`, threadID);
+        return api.sendMessage(`[ ANTI SYSTEM STATUS ]\n────────────────────\n|› 1. Anti Namebox: ${status(antiBoxname)}\n|› 2. Anti Imagebox: ${status(antiImage)}\n|› 3. Anti Nickname: ${status(antiNickname)}\n|› 4. Anti Out: ${status(dataAnti.antiout[threadID])}\n────────────────────\n|› Pakhi bbz Anti System - Protect your group!`, threadID);
       }
       default: {
         return api.sendMessage(`❎ The number you chose is not in the list.`, threadID);
@@ -174,7 +174,7 @@ module.exports.run = async ({ api, event, args, permssion, Threads }) => {
   const { threadID, messageID, senderID } = event;
   const threadSetting = (await Threads.getData(String(threadID))).data || {};
   const prefix = threadSetting.hasOwnProperty("PREFIX") ? threadSetting.PREFIX : global.config.PREFIX;
-  return api.sendMessage(`╭─────────────⭓\n│ Maria Anti-Change Group\n├─────⭔\n│ 1. anti namebox: Lock group name\n│ 2. anti boximage: Lock group image\n│ 3. anti nickname: Lock member nicknames\n│ 4. anti out: Prevent leaving group\n│ 5. anti emoji: Lock group emoji\n│ 6. anti theme: Lock group theme\n│ 7. anti qtv: Protect admin list\n│ 8. anti join: Prevent adding members\n│ 9. Check group anti status\n├────────⭔\n│ 📌 Reply with a number to toggle the mode status\n╰─────────────⭓`,
+  return api.sendMessage(`╭─────────────⭓\n│ Pakhi Anti-Change Group\n├─────⭔\n│ 1. anti namebox: Lock group name\n│ 2. anti boximage: Lock group image\n│ 3. anti nickname: Lock member nicknames\n│ 4. anti out: Prevent leaving group\n│ 5. anti emoji: Lock group emoji\n│ 6. anti theme: Lock group theme\n│ 7. anti qtv: Protect admin list\n│ 8. anti join: Prevent adding members\n│ 9. Check group anti status\n├────────⭔\n│ 📌 Reply with a number to toggle the mode status\n╰─────────────⭓`,
     threadID, (error, info) => {
       if (error) {
         return api.sendMessage("❎ An error occurred!", threadID);

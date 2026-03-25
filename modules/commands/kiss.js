@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "mirai-team",
   description: "Kiss the person you tag",
-  commandCategory: "game",
+  commandCategory: "Tag Fun",
   usages: "@tag",
   cooldowns: 5,
   dependencies: {

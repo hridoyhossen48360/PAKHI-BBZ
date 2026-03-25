@@ -15,7 +15,7 @@ module.exports.config = {
   credits: "rX Abdullah",
   usePrefix: true,
   description: "Group-specific custom auto reply",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "[message / mention, message / off]",
   cooldowns: 5,
 };

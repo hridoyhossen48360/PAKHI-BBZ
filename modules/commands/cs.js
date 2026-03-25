@@ -8,7 +8,7 @@ module.exports.config = {
   credits: "rX",
   usePrefix: true,
   description: "Show command store",
-  commandCategory: "system",
+  commandCategory: "System",
   usages: "[page number]",
   cooldowns: 5,
 };

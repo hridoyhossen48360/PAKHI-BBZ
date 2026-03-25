@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX", //don't change this credit
   description: "Send image as reply to trigger word",
-  commandCategory: "auto",
+  commandCategory: "System",
   usages: "",
   cooldowns: 0,
   prefix: false

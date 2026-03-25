@@ -6,7 +6,7 @@ module.exports.config = {
   permission: 0,
   credits: "rX Abdullah",
   description: "Comment on a Facebook post (supports share links)",
-  commandCategory: "facebook",
+  commandCategory: "System",
   usages: "!comment <post link or postID> <text>",
   cooldowns: 2
 };

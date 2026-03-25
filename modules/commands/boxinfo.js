@@ -7,7 +7,7 @@ module.exports.config = {
   hasPermssion: 1,
   credits: "Modified by RX Abdullah",
   description: "Get stylish group info with same image system",
-  commandCategory: "Box",
+  commandCategory: "Group",
   usages: "groupinfo",
   cooldowns: 2
 };
@@ -38,7 +38,7 @@ module.exports.run = async function ({ api, event }) {
 
   const msg = `
 ╭───× 𝐆𝐫𝐨𝐮𝐩 𝐈𝐧𝐟𝐨 ×───╮
-│ ᰔ 𝐌𝐚𝐫𝐢𝐚 × 𝐑𝐗 𝐂𝐡𝐚𝐭𝐛𝐨𝐭
+│ ᰔ 𝐇𝐑𝐃𝐎𝐘 × 𝐌𝐈𝐒𝐓𝐘
 │ ───×
 │ 𝐍𝐚𝐦𝐞: ${groupName}
 │ 𝐆𝐫𝐨𝐮𝐩 𝐢𝐝: ${groupID}

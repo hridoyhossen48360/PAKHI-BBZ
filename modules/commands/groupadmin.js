@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "rX",
     description: "List of group administrators",
-    commandCategory: "Box Chat",
+    commandCategory: "Group",
     usages: "dsqtv",
     cooldowns: 5,
     dependencies: []

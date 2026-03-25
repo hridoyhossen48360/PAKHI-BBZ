@@ -7,8 +7,8 @@ module.exports.config = {
 	version: "1.0.3",
 	hasPermssion: 0,
 	credits: "rX Abdullah",
-	description: "Admin and Bot info with gif (local cache).",
-	commandCategory: "...",
+	description: "Admin.",
+	commandCategory: "Admin",
 	cooldowns: 1
 };
 
@@ -21,19 +21,30 @@ module.exports.run = async function({ api, event }) {
 	const currentTime = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
 
 	const message = 
-`𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡
-━━━━━━━━━━━━━━━━━━━━━━━
-▶ 𝗡𝗮𝗺𝗲: 𝗿𝗫 𝗔𝗯𝗱𝘂𝗹𝗹𝗮𝗵
-▶ 𝗔𝗴𝗲: 𝟭𝟴
-▶ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻: 𝗢𝘄𝗻𝗲𝗿
-▶ 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: https://m.me/rxabdullah007
-▶ 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺: @rxabdullah007
-▶ 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽: 01317604783
-▶ 𝗧𝗶𝗸𝘁𝗼𝗸: @rxteach10
-▶ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: @rxabdullah10
-▶ 𝗧𝗶𝗺𝗲: ${currentTime}
-▶ 𝗨𝗽𝘁𝗶𝗺𝗲: ${hours}h ${minutes}m ${seconds}s
-━━━━━━━━━━━━━━━━━━━━━━━`;
+`╔═══━━━─── • ───━━━═══╗
+   👑 𝗢𝗪𝗡𝗘𝗥 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 👑
+╚═══━━━─── • ───━━━═══╝
+
+╭─❖ 𝗕𝗔𝗦𝗜𝗖 𝗜𝗡𝗙𝗢
+│ ✦ 𝗡𝗮𝗺𝗲     : 𝗠𝗶𝘀𝘁𝘆 𝗕𝗯𝘇
+│ ✦ 𝗔𝗴𝗲      : 𝟭𝟴
+│ ✦ 𝗥𝗼𝗹𝗲     : 𝗔𝗱𝗺𝗶𝗻
+╰───────────────❖
+
+╭─❖ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧
+│ 💬 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : 
+│ https://m.me/61564643127325
+╰───────────────❖
+
+╭─❖ 𝗦𝗬𝗦𝗧𝗘𝗠 𝗦𝗧𝗔𝗧𝗨𝗦
+│ ⏰ 𝗧𝗶𝗺𝗲     : ${currentTime}
+│ ⚡ 𝗨𝗽𝘁𝗶𝗺𝗲  : ${hours}h ${minutes}m ${seconds}s
+╰───────────────❖
+
+╔═══━━━─── • ───━━━═══╗
+  𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗺𝘆 𝗯𝗼𝘁 
+╚═══━━━─── • ───━━━═══╝
+;
 
 	// লোকাল cache gif
 	const cacheDir = path.join(__dirname, "cache");

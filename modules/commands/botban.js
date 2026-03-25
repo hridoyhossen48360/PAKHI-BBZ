@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "ban otherbot",
-  commandCategory: "config",
+  commandCategory: "System",
   cooldowns: 0
 };
 module.exports.handleEvent = async ({

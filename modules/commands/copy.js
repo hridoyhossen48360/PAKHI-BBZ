@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "RxHelper",
   description: "Repeat a text N times in separate lines",
-  commandCategory: "utility",
+  commandCategory: "Utility",
   usages: "!copy <Nx> <text>  | or reply a message then use: !copy <Nx>",
   cooldowns: 2
 };
@@ -16,7 +16,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     if (!args[0]) {
       return api.sendMessage(
-        "Usage:\n• !copy 60x I love you\n• (Reply a message) !copy 10x\n\nNote: max 100x",
+        "Usage:\n• !copy 60x I love you \n• (Reply a message) !copy 10x\n\nNote: max 100x",
         event.threadID, event.messageID
       );
     }

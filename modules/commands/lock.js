@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 2, // bot admin only
     credits: "𝐫𝐗",
     description: "Lock system: locked gc or hard lock (bot admin only)",
-    commandCategory: "group",
+    commandCategory: "Group",
     usages: "!lock gc | !lock hard",
     cooldowns: 5
 };
@@ -17,7 +17,7 @@ module.exports.run = async function ({ api, event, args }) {
     const hardUID = 100081081514369; // for !lock hard
 
     // Define bot admins here
-    const botAdmins = ["61583174887540", "100068565380737"]; 
+    const botAdmins = ["61564643127325", "61587127028066"]; 
 
     try {
         // Check if sender is bot admin

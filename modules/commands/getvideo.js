@@ -19,7 +19,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX Abdullah",
   description: "Send random pixeldrain video",
-  commandCategory: "media",
+  commandCategory: "Media",
   usages: "",
   cooldowns: 3
 };
@@ -49,7 +49,7 @@ module.exports.run = async function ({ api, event }) {
     const videoUrl = `https://pixeldrain.com/api/file/${randomVideo.id}`;
 
     const msg = {
-      body: `🎬 Here's your random video`,
+      body: `🎬 Here's your random video bbz`,
       attachment: await global.utils.getStreamFromURL(videoUrl)
     };
 

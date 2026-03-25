@@ -18,7 +18,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "rX",
   description: "Manage your group: change name, emoji, image and protect them",
-  commandCategory: "Box",
+  commandCategory: "Group",
   usages: "!group name [name] | !group emoji [emoji] | !group image | !group set",
   cooldowns: 0,
   dependencies: []
