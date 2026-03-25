@@ -47,23 +47,23 @@ module.exports.run = async function ({ api, event, args }) {
     // ==============================
 
     const frames = [
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■□□□□□□□□□] 10%",
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■■■□□□□□□□] 30%",
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■■■■■□□□□□] 50%",
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■■■■■■■□□□] 70%",
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■■■■■■■■■□] 90%",
-        "𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪...\n[■■■■■■■■■■] 100%""
+        "[■□□□□□□□□□] 10%",
+        "[■■■□□□□□□□] 30%",
+        "[■■■■■□□□□□] 50%",
+        "[■■■■■■■□□□] 70%",
+        "[■■■■■■■■■□] 90%",
+        "[■■■■■■■■■■] 100%"
     ];
 
     let loading = await api.sendMessage(
-      `\n\n${frames[0]}`,
+      `𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙋𝙧𝙚𝙛𝙞𝙭...\n\n${frames[0]}`,
       event.threadID
     );
 
     for (let i = 1; i < frames.length; i++) {
       await new Promise(r => setTimeout(r, 300));
       await api.editMessage(
-        `🔄 Initializing Help Menu...\n\n${frames[i]}`,
+        `𝙇𝙤𝙖𝙙𝙞𝙣𝙜 𝙋𝙧𝙚𝙛𝙞𝙭...\n\n${frames[i]}`,
         loading.messageID
       );
     }
@@ -181,8 +181,8 @@ module.exports.run = async function ({ api, event, args }) {
     }
 
     msg += `⭔ Type ${global.config.PREFIX}help [command]\n`;
-    msg += `╭─[⋆˚🦋k̶a̶k̶a̶s̶h̶i̶X̶t̶o̶r̶u̶🎀⋆˚]\n`;
-    msg += `╰‣ Admin : Kakashi Hatake\n`;
+    msg += `╭─[⋆˚🦋𝗣𝗔𝗞𝗛𝗜 𝗕𝗕𝗭🎀⋆˚]\n`;
+    msg += `╰‣ Admin : Misty bbz\n`;
     msg += `╰‣ Report : .callad (yourmsg)\n`;
 
     // ==============================
