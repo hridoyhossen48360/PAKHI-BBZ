@@ -7,7 +7,7 @@ module.exports.config = {
     hasPermssion: 2,
     credits: "rX + Modified by Maria",
     description: "War warning in group chat (Bangla version) with ON/OFF",
-    commandCategory: "group",
+    commandCategory: "Group",
     usages: "warn @mention / warn on / warn off",
     cooldowns: 10
 };
