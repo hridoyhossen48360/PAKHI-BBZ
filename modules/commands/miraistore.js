@@ -12,7 +12,7 @@ module.exports.config = {
   hasPermission: 2,
   credits: "rX",
   description: "Mirai Command Store (Search, Like, Upload, Install, Delete, Trending, List)",
-  commandCategory: "system",
+  commandCategory: "System",
   usages:
     "!ms <id | name | category | author>\n" +
     "!ms install <id>\n" +
