@@ -179,19 +179,19 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
  if (!text || !simsim) return;
 
  const senderName = await Users.getNameUser(event.senderID);
- const triggers = ["baby", "bby", "bot", "bbz", "pakhi", "misty"];
+ const triggers = ["baby", "bby", "bot", "bbz", "pakhi", "toru"];
 
  if (triggers.includes(text)) {
  const replies = [
       "𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮 𝐰𝐚𝐥𝐚𝐢𝐤𝐮𝐦 ♥",
-      "বলেন sir__😌",
+      "𝒀𝒆𝒔 𝑩𝒃𝒛 🎀",
       "𝐁𝐨𝐥𝐨 𝐣𝐚𝐧 𝐤𝐢 𝐤𝐨𝐫𝐭𝐞 𝐩𝐚𝐫𝐢 𝐭𝐨𝐦𝐫 𝐣𝐨𝐧𝐧𝐨 🐸",
-      "𝐋𝐞𝐛𝐮 𝐤𝐡𝐚𝐰 𝐝𝐚𝐤𝐭𝐞 𝐝𝐚𝐤𝐭𝐞 𝐭𝐨 𝐡𝐚𝐩𝐚𝐲 𝐠𝐞𝐬𝐨",
+      "𝗜’𝗺 𝗻𝗼𝘁 𝗼𝗽𝘁𝗶𝗼𝗻 , 𝗜’𝗺 𝗽𝗿𝗶𝗼𝗿𝗶𝘁𝘆 💞",
       "𝗕𝗯𝘆 𝗯𝗯𝘆 𝗻𝗮 𝗸𝗼𝗿𝗲𝗲 🥳 𝗔𝗺𝗮𝗿 𝗕𝗼𝘀𝘀 𝗣𝗮𝗸𝗵𝗶  𝗞𝗲 𝗝𝗮𝗺𝗮𝗶 𝗸𝗵𝘂𝗷𝗲 𝗗𝗲𝗻___ ᥫ᭡❤😛",
       "𝐋𝐞𝐦𝐨𝐧 𝐭𝐮𝐬 🍋",
       "𝗛𝗲𝘆 𝗯𝗯𝘆 😛 𝗔𝗶 𝗝𝗲𝗲 𝗮𝗺𝗶𝗶 😇",
       ".__𝐚𝐦𝐤𝐞 𝐬𝐞𝐫𝐞 𝐝𝐞𝐰 𝐚𝐦𝐢 𝐌𝐢𝐬𝐭𝐲'𝐫 𝐤𝐚𝐬𝐞 𝐣𝐚𝐛𝐨!!🥺.....😗",
-      "লুঙ্গি টা ধর মুতে আসি🙊🙉",
+      "𝐎𝐢 𝐗𝐚𝐧 😗 𝐏𝐚𝐚𝐤𝐡𝐢 𝐢𝐬 𝐇𝐞𝐫𝐞 💫",
       "──‎ 𝐇𝐮𝐌..? 👉👈",
       "𝗛𝗲𝘆 𝗕𝗯𝘆💫 𝗜'𝗺 𝗣𝗮𝗸𝗵𝗶 𝗕𝗯𝘇 😛",
       "কি হলো, মিস টিস করচ্ছো নাকি 🤣",
@@ -216,7 +216,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
  });
  }
 
- const matchPrefix = /^(baby|bby|bot|bbz|pakhi|misty)\s+/i;
+ const matchPrefix = /^(baby|bby|bot|bbz|pakhi|toru)\s+/i;
  if (matchPrefix.test(text)) {
  const query = text.replace(matchPrefix, "").trim();
  if (!query) return;
