@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require('fs');
 
 const baseApiUrl = async () => {
-  const base = await axios.get("https://raw.githubusercontent.com/rxabdullah0007/rX-apis/main/xApis/rXallApi.json");
+  const base = await axios.get("https://raw.githubusercontent.com/Mostakim0978/D1PT0/refs/heads/main/baseApiUrl.json");
   return base.data.api;
 };
 
@@ -10,7 +10,7 @@ module.exports = {
   config: {
     name: "video",
     version: "1.1.4",
-    credits: "dipto",
+    credits: "Hridoy",
     countDown: 5,
     hasPermssion: 0,
     description: "Download video, audio, and info from YouTube",
@@ -171,4 +171,5 @@ async function streamImage(url, pathName) {
   } catch (err) {
     throw err;
   }
-                      }
+                            }
+          
